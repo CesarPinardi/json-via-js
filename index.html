@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type"text/css" href="style.css" />
+    <script src="script.js"></script>
+    <title>Cadastre seu curriculo.</title>
+</head>
+
+<body>
+    <form name="form1" autocomplete="off" action="enviar" method="POST">
+        <h3>Alimentacao</h3>
+
+        <table>
+            <tr>
+                <td class="label">Valor Refeição</td>
+                <td class="answer">
+                    <input required id="nome" class="long" type="text" placeholder="Digite seu nome" />
+                </td>
+            </tr>
+            <tr>
+                <td class="label">Data de Nascimento</td>
+                <td class="answer">
+                  
+                </td>
+            </tr>
+            <tr>
+                <td class="label">Tipo</td>
+                <td class="answer">
+                    <input type="radio" value="Almoco" /> Almoço
+                    <input type="radio" value="Jantar" /> Feminino
+                    <input type="radio" value="Feminino" /> Feminino
+                </td>
+            </tr>
+        </table>
+
+        <input type="button" id="limpar" onclick="limpa()" class="button" value="Limpar" />
+        |
+        <input type="button" value="Enviar" onclick="validarFormulario()" class="button" />
+    </form>
+</body>
+
+</html>
