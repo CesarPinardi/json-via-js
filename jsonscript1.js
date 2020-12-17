@@ -23,7 +23,6 @@ request1.onload = function () {
     showdatacombustivel(combustivel);
 }
 
-
 function showdataAlimentacao(obj) {
     const dataAlimentacao = obj['data']; //members -> vetor dentro do json
 
@@ -38,7 +37,6 @@ function showdataAlimentacao(obj) {
         myPara1.textContent = 'Valor Refeicao: ' + dataAlimentacao[i].valorRefeicao;
         myPara2.textContent = 'Tipo Refeicao: ' + dataAlimentacao[i].tipoRefeicao;
         myPara3.textContent = 'Cidade: ' + dataAlimentacao[i].cidade;
-       
 
         myArticle.appendChild(myPara0);
         myArticle.appendChild(myPara1);
@@ -48,7 +46,6 @@ function showdataAlimentacao(obj) {
         divEx1.appendChild(myArticle);
     }
 }
-
 
 function showdatacombustivel(obj) {
     const datacombustivel = obj['data']; //members -> vetor dentro do json
@@ -64,7 +61,6 @@ function showdatacombustivel(obj) {
         myPara1.textContent = 'Valor Combustivel: ' + datacombustivel[i].qtdKm;
         myPara2.textContent = 'Tipo Combustivel: ' + datacombustivel[i].valorKm;
         myPara3.textContent = 'Cidade: ' + datacombustivel[i].cidade;
-       
 
         myArticle.appendChild(myPara0);
         myArticle.appendChild(myPara1);
